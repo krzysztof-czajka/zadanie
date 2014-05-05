@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Activity player - example 1</title>
+
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/additional-methods.js"></script>
+	
+		<script>
+		$(function() {
+			$(".formularz").validate({
+				rules: {
+					foggy: {
+						equalTo: "#foggy1"
+					},
+					raining: {
+						equalTo: "#raining1"
+					},
+					sunny: {
+						equalTo: "#sunny1"
+					},
+					cloudy: {
+						equalTo: "#cloudy1"
+					},
+					windy: {
+						equalTo: "#windy1"
+					},
+					snowing: {
+						equalTo: "#snowing1"
+					}
+				},
+
+				messages: {
+					foggy: {
+						equalTo: "<div class='icon-correct'><img src='images/icons/wrong.png' alt='correct'/></div>"
+					},
+					raining: {
+						equalTo: "<div class='icon-correct'><img src='images/icons/wrong.png' alt='correct'/></div>"
+					},
+					sunny: {
+						equalTo: "<div class='icon-correct'><img src='images/icons/wrong.png' alt='correct'/></div>"
+					},
+					cloudy: {
+						equalTo: "<div class='icon-correct'><img src='images/icons/wrong.png' alt='correct'/></div>"
+					},
+					windy: {
+						equalTo: "<div class='icon-correct'><img src='images/icons/wrong.png' alt='correct'/></div>"
+					},
+					snowing: {
+						equalTo: "<div class='icon-correct'><img src='images/icons/wrong.png' alt='correct'/></div>"
+					}	
+				}	
+			});
+		});	
+		</script>			
+<!-- 		<script type="text/javascript">
+			$(document).ready(function() {
+
+				$( ".pictures" ).validate({
+				  rules: {
+				    raining: "required",
+				    equalTo: "raining"
+				  }
+				});
+			});
+		</script> -->
+
+	</script>
+	</head>	
+	<body>
+		<div class="container">
+			<h1>Exercise 3 Vocabulary</h1>
+			<h2>Label the wheather symbols.</h2>
+			<div class="container-pic" id="container-pic">
+			
+				<form action="krok1.php" class="formularz" method="post">
+				<div class="pictures">
+					<img src="images/pictures/exercise2/1.png" alt="foggy" id="foggy">
+					<div id="example-container">
+						<p class="example">Example: </p>
+						<label for="foggy" class="label-pic" style="position: static;">1</label>
+						<input type="text" value="foggy" style="margin-left: 10px;" id="foggy" name="foggy">
+						<input type="text" value="foggy" id="foggy1" name="foggy1" class="input-hidden">
+					</div> <!-- /.example-container -->
+				</div> <!-- /.pictures -->
+
+				<div class="pictures">
+					<img src="images/pictures/exercise2/2.png" alt="raining" id="raining">
+					<label for="raining" class="label-pic">2</label>
+					<input type="text" id="raining" name="raining">
+					<input type="text" id="raining1" name="raining1" class="input-hidden" value="raining">
+					<div id="iraining" class="error"></div>
+				</div> <!-- /.pictures -->
+
+				<div class="pictures">
+					<img src="images/pictures/exercise2/3.png" alt="sunny" id="sunny">
+					<label for="sunny" class="label-pic">3</label>
+					<input type="text" id="sunny" name="sunny">
+					<input type="text" id="sunny1" name="sunny1" class="input-hidden" value="sunny">
+					<div id="isunny" class="error"></div>
+				</div> <!-- /.pictures -->
+
+				<div class="pictures">
+					<img src="images/pictures/exercise2/4.png" alt="cloudy"  id="cloudy">
+					<label for="cloudy" class="label-pic">4</label>
+					<input type="text" id="cloudy" name="cloudy">
+					<input type="text" id="cloudy1" name="cloudy1" class="input-hidden" value="cloudy">
+					<div id="icloudy" class="error"></div>
+				</div> <!-- /.pictures -->
+
+				<div class="pictures">
+					<img src="images/pictures/exercise2/5.png" alt="windy" id="windy">
+					<label for="windy" class="label-pic">5</label>
+					<input type="text" id="windy" name="windy">
+					<input type="text" id="windy1" name="windy1" class="input-hidden" value="windy">
+					<div id="iwindy" class="error"></div>
+				</div> <!-- /.pictures -->
+
+				<div class="pictures">
+					<img src="images/pictures/exercise2/6.png" alt="snowing" id="snowing">
+					<label for="snowing" class="label-pic">6</label>
+					<input type="text" id="snowing" name="snowing">
+					<input type="text" id="snowing1" name="snowing1" class="input-hidden" value="snowing">
+					<div id="isnowing" class="error"></div>
+				<button class="check"><a href="#" type="submit"><img src="images/icons/tick_white.png" alt="check"></a></button>
+				</div> <!-- /.pictures -->
+				</form>
+
+				<div class="container-tags">
+					<span class="tags">snowing</span>
+					<span class="tags">cloudy</span>
+					<span class="tags">raining</span>
+					<span class="tags">foggy</span>
+					<span class="tags">windy</span>
+					<span class="tags">sunny</span>
+				</div> <!-- /.container-tags -->
+
+
+		   </div><!--  /.container-pic -->
+			<div class="navs">
+				<button class="arrow left"><a href="#"><img src="images/icons/left.png" alt="arrow"></a></button>
+				<button class="arrow right"><a href="#"><img src="images/icons/right.png" alt="arrow"></a></button>
+				<div class="small-circle"></div>
+				<div class="circle">2</div>
+				<div class="small-circle"></div>
+				<div class="small-circle"></div>
+				<div class="circle">3</div>
+				<div class="small-circle"></div>
+				<div class="small-circle"></div>
+				<div class="circle">4</div>
+				<div class="small-circle"></div>
+				<div class="circle">5</div>
+				<div class="small-circle"></div>
+				<div class="small-circle"></div>
+			</div>
+
+	
+		</div> <!-- /.container -->	
+	</body>
+</html>

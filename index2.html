@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Activity player - example 1</title>
+
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/additional-methods.js"></script>
+	
+		<script>
+		$(function() {
+			$("#formularz2").validate({
+				rules: {
+					answer1: {
+						equalTo: "#answer11"
+					},
+					answer2: {
+						equalTo: "#answer22"
+					},
+					answer3: {
+						equalTo: "#answer33"
+					},
+					answer4: {
+						equalTo: "#answer44"
+					},
+					answer5: {
+						equalTo: "#answer55"
+					},
+					answer6: {
+						equalTo: "#answer66"
+					}
+				},
+
+				messages: {
+					answer1: {
+						equalTo: "<div class='icon-correct2'><img src='images/icons/wrong.png' alt='correct'/></div>"
+					},
+					answer2: {
+						equalTo: "<div class='icon-correct2'><img src='images/icons/wrong.png' alt='correct'/></div>"
+					},
+					answer3: {
+						equalTo: "<div class='icon-correct2'><img src='images/icons/wrong.png' alt='correct'/></div>"
+					},
+					answer4: {
+						equalTo: "<div class='icon-correct2'><img src='images/icons/wrong.png' alt='correct'/></div>"
+					},
+					answer5: {
+						equalTo: "<div class='icon-correct2'><img src='images/icons/wrong.png' alt='correct'/></div>"
+					},
+					answer6: {
+						equalTo: "<div class='icon-correct2'><img src='images/icons/wrong.png' alt='correct'/></div>"
+					}	
+				}	
+
+				
+			});
+		});	
+		</script>			
+
+	</script>
+	</head>	
+	<body>
+		<div class="container">
+			<h1>Exercise 3 Vocabulary</h1>
+			<h2>What school activities do you see on the picture?</h2>
+			<div class="container-pic" id="container-pic">
+				<div class="container-pic2">
+					<div class="pict">
+						<img src="images/pictures/exercise1/1.png" alt="picture" class="img1">
+						<span class="numb numb1">1</span>
+					</div>
+
+					<div class="pict">
+					<img src="images/pictures/exercise1/2.png" alt="picture" class="img2">
+					<span class="numb numb2">2</span>
+					</div>
+
+					<div class="pict">
+					<img src="images/pictures/exercise1/3.png" alt="picture" class="img3">
+					<span class="numb numb3">3</span>
+					</div>
+					
+					<div class="pict">
+					<img src="images/pictures/exercise1/4.png" alt="picture" class="img4">
+					<span class="numb numb4">4</span>
+					</div>
+					
+					<div class="pict">
+					<img src="images/pictures/exercise1/5.png" alt="picture" class="img5">
+					<span class="numb numb5">5</span>
+					</div>
+					
+					<div class="pict">
+					<img src="images/pictures/exercise1/6.png" alt="picture" class="img6">
+					<span class="numb numb6">6</span>
+					</div>
+
+				</div> <!-- /.container-pic2 -->
+				<div class="container-pic2-2">
+					<form action="krok1.php" id="formularz2">
+						<div class="form2cont">
+						<input type="text" name="answer1" id="answer1"><label for="answer1">enjoying a field trip</label>
+						<input type="text" name="answer11" id="answer11" value="2" class="input-hidden">
+						</div>
+
+						<div class="form2cont">
+						<input type="text" name="answer2" id="answer2"><label for="answer2">working on a computers</label>
+						<input type="text" name="answer22" id="answer22" value="3" class="input-hidden">
+						</div>
+
+						<div class="form2cont">
+						<input type="text" name="answer3" id="answer3"><label for="answer3">taking a test</label><br/>
+						<input type="text" name="answer33" id="answer33" value="4" class="input-hidden">
+						</div>
+
+						<div class="form2cont">
+						<input type="text" name="answer4" id="answer4"><label for="answer4">doing a project</label>
+						<input type="text" name="answer44" id="answer44" value="1" class="input-hidden">
+						</div>
+
+						<div class="form2cont">
+						<input type="text" name="answer5" id="answer5"><label for="answer5">giving a presentation</label>
+						<input type="text" name="answer55" id="answer55" value="5" class="input-hidden">
+						</div>
+
+						<div class="form2cont">
+						<input type="text" name="answer6" id="answer6"><label for="answer6">practicing yoga</label>
+						<input type="text" name="answer66" id="answer66" value="6" class="input-hidden">
+						</div>
+			<button class="check"><a href="#" type="submit"><img src="images/icons/tick_white.png" alt="check"></a></button>
+					</form>
+				</div> <!-- /.container-pic2-2 -->
+
+		   </div><!--  /.container-pic -->
+			<div class="navs">
+				<button class="arrow left"><a href="#"><img src="images/icons/left.png" alt="arrow"></a></button>
+				<button class="arrow right"><a href="#"><img src="images/icons/right.png" alt="arrow"></a></button>
+				<div class="small-circle"></div>
+				<div class="circle">2</div>
+				<div class="small-circle"></div>
+				<div class="small-circle"></div>
+				<div class="circle">3</div>
+				<div class="small-circle"></div>
+				<div class="small-circle"></div>
+				<div class="circle">4</div>
+				<div class="small-circle"></div>
+				<div class="circle">5</div>
+				<div class="small-circle"></div>
+				<div class="small-circle"></div>
+			</div>
+
+			<div class="numbers">
+				
+		
+			</div>
+
+	
+		</div> <!-- /.container -->	
+	</body>
+</html>
